@@ -1,0 +1,41 @@
+<div class="row" >
+    <div class="col-md-2" *ngIf="flag">
+        <div class="vertical-nav bg-dark text-light" >
+            <div class="py-3 mb-4 bg-dark" >
+              <div class="media d-flex align-items-center">
+                <div class="media-body text-center">
+                  M&nbsp;E&nbsp;N&nbsp;U&nbsp; &nbsp;&nbsp;&nbsp;B&nbsp;A&nbsp;R
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav flex-column bg-dark text-light mb-0">
+              <li class="nav-item">
+                <a routerLink="/Dashboard" routerLinkActive="active-link" class="nav-link">
+                    <i class="fa fa-cogs"></i>&nbsp;&nbsp;Dashboard
+                </a>
+              </li>
+              <br>
+              <li class="nav-item">
+                <a routerLink="/Reports" routerLinkActive="active-link" class="nav-link">
+                    <i class="fa fa-cogs"></i>&nbsp;&nbsp;Reports
+                </a>
+              </li>
+              <br>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fa fa-cogs"></i>&nbsp;&nbsp;Settings
+                </a>
+              </li>
+            </ul>
+        </div>  
+    </div>
+    <div class="col-md-10 text-center" *ngIf="flag">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="col-md-12 text-center" *ngIf="!flag">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
