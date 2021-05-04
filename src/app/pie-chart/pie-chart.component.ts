@@ -22,7 +22,7 @@ export class PieChartComponent implements OnInit {
   public pieChartType = 'pie';
   public pieChartColors: Array < any > = [{
     backgroundColor: ['green', 'yellow', 'brown', 'orange'],
-    borderColor: ['rgba(135,206,250,1)', 'rgba(106,90,205,1)', 'rgba(148,159,177,1)']
+    borderColor: ['rgba(135,206,250,1)', 'rgba(106,89,205,1)', 'rgba(148,159,177,1)']
  }];
 
 
